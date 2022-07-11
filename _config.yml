@@ -10,7 +10,7 @@ favicon: image/A.svg                            # Icon displayed in the tab
 
 # Header and footer text
 header_text: <code>Ahnho`s Blog</code>  # Change Blog header text
-header_feature_image: image/header/hei.jpg
+header_feature_image: image/header/leg.jpg
 header_feature_image_responsive: true
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
