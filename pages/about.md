@@ -6,16 +6,16 @@ feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
 ---
 
-# About
+## About
 
 About Sang Ho Ahn(Ahnho)
 
 ---
 
-# Skills
+## Skills
 
 - Main Language : python
 
 ---
 
-# project 
+## project 
