@@ -3,7 +3,7 @@ baseurl: # "/Type-on-Strap"
 url: "https://ahnho.github.io" 
 
 # THEME-SPECIFIC CONFIGURATION
-title: "> cd/home/ahnho"                                     # site's title
+title: "> cd /home/ahnho"                                     # site's title
 description: "A website with blog posts and pages"      # used by search engines
 avatar: image/A.svg                      # Empty for no avatar in navbar
 favicon: image/A.svg                            # Icon displayed in the tab
