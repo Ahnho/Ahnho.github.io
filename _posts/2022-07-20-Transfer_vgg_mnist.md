@@ -7,8 +7,6 @@ author: Ahnho
 excerpt_separator: <!--more-->
 ---
 
-# Transfer learning with VGGNet & MNIST Dataset
-
 - Goal : vgg16 model로 Tramsfer Learning을 이용하여 MNIST Data 학습시켜 확인해보자
 > : 즉, image net을 학습한 model이 MNIST의 숫자 data들을 잘 구별할수있나 확인해보자.
 
@@ -23,7 +21,7 @@ excerpt_separator: <!--more-->
 
 - Resize를 통해 size를 (28 by 28) -> (244 by 244) 변경
 -  lmada함수를 통해 1차원인 MNIST data를 3번 쌓아서 3차원으로 채널을 맞춰주었다.
-```python3 
+```python
 trans = transforms.Compose([transforms.ToTensor(),
                             transforms.Normalize((0.1,),(0.5,)),
                             transforms.Resize(224),
@@ -37,7 +35,7 @@ test_dataset = MNIST(download_root, transform=trans, train=False, download=True)
 
 ## DataLoader 작성
 
-```python3
+```python
 train_dataloader = DataLoader(dataset= train_dataset,
                           batch_size= batch_size,
                           shuffle=True)
@@ -55,7 +53,7 @@ dataloaders_dict = {
 
 - vgg16 model을 불러오고 classifier의 마지막 부분의 out features를 MNIST Data에 맞게 10으로 변경한다
 
-```python3
+```python
 net = models.vgg16(pretrained=True)
 
 print(net.classifier)
@@ -72,7 +70,7 @@ net = net.to(device)
 
 ## Training output layer
 
-```python3
+```python
 params_to_update = []
 
 update_param_names = ["classifier.6.weight", "classifier.6.bias"]
