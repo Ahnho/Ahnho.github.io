@@ -86,7 +86,7 @@ for name, param in net.named_parameters():
 
 ## 결과 및 결론
 
-![Image of a glass on a book]({{ "/_portfolio/TLVM.png" | relative_url }})
+![Image]({{ "/_portfolio/TLVM.png" }})
 
 - 결론 : :: image net을 학습한 vgg16 model로도 MINST의 숫자 Data들을 충분히 높은 정확도로 구별을 할 수 있다!.
 
