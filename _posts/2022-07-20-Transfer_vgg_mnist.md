@@ -86,7 +86,7 @@ for name, param in net.named_parameters():
 
 ## 결과 및 결론
 
-<img src= "/_portfolio/TLVM.png" width="300px" height="50px" title="image"/>
+<img src= "/_portfolio/TLVM.png" width="800px" height="150px" title="image"/>
 
 - 결론 : :: image net을 학습한 vgg16 model로도 MINST의 숫자 Data들을 충분히 높은 정확도로 구별을 할 수 있다!.
 
