@@ -21,12 +21,12 @@ excerpt_separator: <!--more-->
 
 - Resize를 통해 size를 (28 by 28) -> (244 by 244) 변경
 -  lmada함수를 통해 1차원인 MNIST data를 3번 쌓아서 3차원으로 채널을 맞춰주었다.
+
 ```python
 trans = transforms.Compose([transforms.ToTensor(),
                             transforms.Normalize((0.1,),(0.5,)),
                             transforms.Resize(224),
                              transforms.Lambda(lambda x: x.repeat(3,1,1))])
-
 # MNIST dataset
 train_dataset = MNIST(download_root, transform=trans, train=True, download=True)
 test_dataset = MNIST(download_root, transform=trans, train=False, download=True)
