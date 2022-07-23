@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-<img src= "/image/SS.png" width="600px" height="600px" title="image"/>
+<img src= "/image/SS.png" width="900px" height="600px" title="image"/>
 
 ---
 
