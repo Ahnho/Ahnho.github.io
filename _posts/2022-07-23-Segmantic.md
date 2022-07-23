@@ -50,6 +50,4 @@ excerpt_separator: <!--more-->
 
 ## 참조
 
-- https://d2l.ai/index.html
-- 만들면서 배우는 파이토치 딥러닝, 오가와 유타로 저, 박광수 옮김, 한빛미디어 (2021)
-- https://jeinalog.tistory.com/13
+- 만들면서 배우는 파이토치 딥러닝, 오가와 타로 저, 박광수 옮김, 한빛미디어 (2021)
