@@ -12,6 +12,17 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
+<img src= "/image/SS.png" width="400px" height="600px" title="image"/>
+
+---
+
+
+## 사용 용도
+- 제조업 : 흠집 탐지
+- 의료 영상 : 병변 감지
+- 자율 주행 : 주변 환경 파악
+- 로봇 비전 : 객체와 지형 탐지 등 ..
+
 ---
 
 ## input,output
@@ -19,6 +30,7 @@ excerpt_separator: <!--more-->
 - input : 일반적으로 화상 데이터는 RGB를 포함한 3요소 or + 투명도를 합한 4요소의 배열로 포함된다.
 
 - output :  물체 클래스의 인덱스 값이 라벨 정보로 하나의 요소이다.
+
 
 ---
 
