@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dropout
+title: Activation Functions
 tags: [DL, CV, Color]
 color: brown
 author: Ahnho
