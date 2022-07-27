@@ -66,13 +66,17 @@ $$ \frac{d}{dx}sigmoid(x) = sigmoid(x)(1-sigmoid(x)) $$
 - (-1,1)까지의 값을 반환 
 - sigmoid처럼 입력값이 0에 가까울 수록 선형변환에 접근한다.
 - sigmoid와 모양은 비슷하지만 원점에 대한 점대칭이다. 
+
 $$ tanh(x) = \frac{1-exp(-2x)}{1+exp(-2x)} $$
+
 - Tanh :
 
 ![../_images/output_mlp_76f463_63_0.svg](https://d2l.ai/_images/output_mlp_76f463_63_0.svg)
 
 - sigmoid처럼 도함수에서 입력값이 0에 가까워질수록 최대값에 접근한다. 
+
 $$ \frac{d}{dx}tanh(x) = 1-tanh^2(x) $$
+
 - Tanh 도함수 :
 
 ![../_images/output_mlp_76f463_75_0.svg](https://d2l.ai/_images/output_mlp_76f463_75_0.svg)
