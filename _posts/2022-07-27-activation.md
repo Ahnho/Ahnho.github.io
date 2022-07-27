@@ -32,8 +32,7 @@ $$ReLU(x) = max(x,0)$$
 ![../_images/output_mlp_76f463_27_0.svg](https://d2l.ai/_images/output_mlp_76f463_27_0.svg)
 
 - pReLU : 매개 변수화된 함수를 포함한 변종 : ReLU에 선현 항을 추가해 음수일때도 일부 정보가 전달이 된다.
-  :  Dying ReLU Problem
-  https://towardsdatascience.com/the-dying-relu-problem-clearly-explained-42d0c54e0d24
+- [Dying ReLU Problem](https://towardsdatascience.com/the-dying-relu-problem-clearly-explained-42d0c54e0d24)
   
 $$pLeLU(x) = max(0,x) + \alpha min(0,x)$$
 
