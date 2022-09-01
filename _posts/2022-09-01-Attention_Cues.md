@@ -21,7 +21,7 @@ excerpt_separator: <!--more-->
 
 우리의 attention이 시각 세계에 어떻게 배치되는지를 설명하기 위해, 두 가지 구성 요소 프레임 워크가 등장 
 
-1. 
+1.  *non-nonvolitional cue* 
 
 > : 환경 내 물체의 눈에 띄는 정도에 기초한다.
 >
