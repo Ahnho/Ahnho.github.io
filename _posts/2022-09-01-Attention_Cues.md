@@ -22,7 +22,7 @@ excerpt_separator: <!--more-->
 
 우리의 attention이 시각 세계에 어떻게 배치되는지를 설명하기 위해, 두 가지 구성 요소 프레임 워크가 등장 
 
-1.  *non-nonvolitional cue* 
+1.  *non-volitional cue* 
 
 > : 환경 내 물체의 눈에 띄는 정도에 기초한다.
 >
@@ -52,14 +52,14 @@ excerpt_separator: <!--more-->
 
 - 그래서 attention mechanisms 에서 fully connected layer와 pooling layers를 구별하는 것은 *nonvolitional cue* 의 포함이다. 
 
->  :  volitional cues를 queries라고 부른다.
+>  :  volitional cues를 quries라고 부른다.
 
 -  이런  queries가 주어지면 machanisms은 attention pooling을 통해 sensory input(ex) 중간특징 표현)보다 선택을 편향시킨다. 
 
 > : sensory  input 은  attention mechanisms에서 values라고 불린다.
 
 - 일반적으로 모든 values & keys 는 쌍을 이루며 sensory input의 *non-nonvolitional cue* 라고 생각이 할 수 있다.
-- 밑에 그림을 보면, 주어진 queries(volitional cue)가 values(sensory input)에 대한 편향 선택을 안내하는 keys(non-volitional cue)와 상호작용할수 있도록 attention pooling을 설게할수 있다.
+- 밑에 그림을 보면, 주어진 quries(volitional cue)가 values(sensory input)에 대한 편향 선택을 안내하는 keys(non-volitional cue)와 상호작용할수 있도록 attention pooling을 설게할수 있다.
 
 
 
@@ -69,7 +69,7 @@ excerpt_separator: <!--more-->
 
 > ex) 강화학습을 통한 미분불가능한 attention model 설계 
 
-- queries 와 key 사의 attention weight를 시각화 가능하다.
+- quries 와 key 사의 attention weight를 시각화 가능하다.
 
 
 
