@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 > - hyperparameter가 설정이 잘못되어 있으면 model의 문제가 없어도 학습이 제대로 되지않는다.
 > ex)  사람을 예시로 들어서 학생들이 교육을 받거나 학습을 할때 주변 환경이 좋아야 학습이 더 잘되는거가 있다.
  
---
+--- 
 
 
 ### Learning rate
