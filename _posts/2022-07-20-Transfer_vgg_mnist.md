@@ -84,7 +84,7 @@ for name, param in net.named_parameters():
         param.requires_grad = False
 ```
 
-## 결과 및 결론
+## 결과 및 결론 
 
 <img src= "/_portfolio/TLVM.png" width="800px" height="150px" title="image"/>
 
