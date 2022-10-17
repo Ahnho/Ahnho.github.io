@@ -46,6 +46,7 @@ excerpt_separator: <!--more-->
 > KL divergence :  두 확률분포간의 거리를 계산할때 주로 사용 
 - deep learning 의  loss fuction으로도 많이 사용 
 - 데이터  분포 P는 학습 과정에서 변화 X 
+> 주어진 데이터 이기때문에 변화가 없다.
 - cross entropy를 loss fuction으로 사용하는 경우 -> KL divergenc를 최소화 하는거와 동일하다.
 
 ## Reference
