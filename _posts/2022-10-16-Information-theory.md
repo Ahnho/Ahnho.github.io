@@ -40,7 +40,7 @@ excerpt_separator: <!--more-->
 
 ## cross entropy
 - 두개의 확률 분포가 얼마만큼 정보를 공유하고 있는지의 대한 척도 
- $$ H(P,Q) = - \sum_x P(x)log_2Q(x) = -\sum_x P(e_i)log_2Q(e_i) $$
+ $$H(P,Q) = - \sum_x P(x)log_2Q(x) = -\sum_x P(e_i)log_2Q(e_i)$$
 : $$H(P,Q) = - \sum_x P(x)log_2Q(x) = H(P) + \sum_x P(x)log_2\frac{P(x)}{Q(x)}$$
 - $$\sum_xP(x)log_2\frac{P(x)}{Q(x)}$$ : KL divergence
 > KL divergence :  두 확률분포간의 거리를 계산할때 주로 사용 
