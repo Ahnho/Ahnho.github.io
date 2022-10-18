@@ -22,7 +22,7 @@ excerpt_separator: <!--more-->
 
 ## self information 
 - 사건 $$e_i$$ 의 정보량 
-> : $$h(e_i) =  -log_2P(e_i)$ or $h(e_i) =  -log_eP(e_i)$$ 
+> : $h(e_i) =  -log_2P(e_i)$ or $h(e_i) =  -log_eP(e_i)$
 - 해당하는 event가 얼마만큼의 확률을 가지고 있는지
 - 확률변수 하나의 대해서 측정 한 것
 >ex)
@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 ## entropy
 - 확률 변수 $$x$$의 불확실성을 나타내는 것
 - 전체 사건 정보량을 기대값으로 표현 
-- 이산확률 분포 : $$ H(x) = - \sum_{i =1,k}  P(e_i)log_2P(e_i) & -\sum_{i =1,k} P(e_i)log_eQ(e_i) $$
+- 이산확률 분포 : $H(x) = - \sum_{i =1,k}  P(e_i)log_2P(e_i)$  $-\sum_{i =1,k} P(e_i)log_eQ(e_i)$
 - 연속확률분포 : $H(x) = - \int_R  P(x)log_2P(x)$ or $-\int_R P(x)log_eQ(x)$
 - 정보를 얼마만큼 보내느냐에 대한 관점
 - 확률간의 두 분포를 얼마만큼 유사한지 측정하는 척도로 사용
