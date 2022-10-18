@@ -32,8 +32,8 @@ excerpt_separator: <!--more-->
 ## entropy
 - 확률 변수 $$x$$의 불확실성을 나타내는 것
 - 전체 사건 정보량을 기대값으로 표현 
-- 이산확률 분포 : $$ H(x) = - \sum_{i =1,k}  P(e_i)log_2P(e_i)$  or $-\sum_{i =1,k} P(e_i)log_eQ(e_i) $$
-- 연속확률분포 : $$ H(x) = - \int_R  P(x)log_2P(x)$ or $-\int_R P(x)log_eQ(x) $$
+- 이산확률 분포 : $$ H(x) = - \sum_{i =1,k}  P(e_i)log_2P(e_i) & -\sum_{i =1,k} P(e_i)log_eQ(e_i) $$
+- 연속확률분포 : $H(x) = - \int_R  P(x)log_2P(x)$ or $-\int_R P(x)log_eQ(x)$
 - 정보를 얼마만큼 보내느냐에 대한 관점
 - 확률간의 두 분포를 얼마만큼 유사한지 측정하는 척도로 사용
 - 모든 사건이 동일한 확률 -> 어떤 사건이 일어날지 예측이 어려움  -> 불확실성이 큼 -> entropy가 높음 -> 더 큰 정보
