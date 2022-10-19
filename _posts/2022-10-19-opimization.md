@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Optimization basic for ML
-tags: [DL, Color]
+tags: [ML, Color]
 color: brown
 author: Ahnho
 excerpt_separator: <!--more-->
@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 - 그리고 우리는 global minia를 찾고 있지만 local minia를 찾고 만족하는 경우가 많다.
 ex) 
 
-<img src= "/_image/PDF_1.png" width="800px" height="150px" title="image"/>
+<img src= "/image/PDF_1.png" width="800px" height="150px" title="image"/>
 
 ![[Screenshot_2022-10-10_14-34-58.png]]
 
@@ -74,7 +74,9 @@ Hessian matrix : 2차 미분 행렬
 - epoch : training set 한번을 다보고 학습을 시킨걸 1-epoch라고 한다.
 - epoch 를 반복하여 학습.
  
-
+## Reference
+- 기계학습(오일석)
+- 이재구(인공지능/2022)(국민대)
 
 ## Reference
 - 기계학습(오일석)
