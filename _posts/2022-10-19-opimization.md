@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 - 그리고 우리는 global minia를 찾고 있지만 local minia를 찾고 만족하는 경우가 많다.
 ex) 
 
-<img src= "/image/PDF_1.png" width="600px" height="200px" title="image"/>
+<img src= "/image/OP_1.png" width="600px" height="200px" title="image"/>
 
 Jacobian matrix  : 특정 행렬을 미분해서 얻은 행렬
 Hessian matrix : 2차 미분 행렬
