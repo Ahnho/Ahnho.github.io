@@ -34,8 +34,6 @@ ex)
 
 <img src= "/image/PDF_1.png" width="600px" height="200px" title="image"/>
 
-![[Screenshot_2022-10-10_14-34-58.png]]
-
 Jacobian matrix  : 특정 행렬을 미분해서 얻은 행렬
 Hessian matrix : 2차 미분 행렬
 
@@ -52,11 +50,11 @@ Hessian matrix : 2차 미분 행렬
 - 초기에 파라미터를 설정을 한다. 
 -  그리고 목점함수가 작아지는 방향으로 파라미터를 구함  
 > 파라미터가 작아지는 방향 : 미분값으로 계산  
-- 핵심원리 : $d \theta = - f^`(x)$
+- 핵심원리 : $$d \theta = - f^`(x)$$
  - gradient : 미분 값이 이루는 벡터
  - ML 에서의 편미분 : 매개변수 집합은 복수 매개변수 이므로 편미분을 사용한다.
  - learning rate: 탑색을할때 이동거리를 조절하는 역할
- - $\theta = \theta - pg$ : 위와같은 방법으로  gradient를 구한뒤 기울기가 낮은쪽으로 learning rate 만큼 이동하는걸 반복하여 최소값에 도달한다 .
+ - $$\theta = \theta - pg$$ : 위와같은 방법으로  gradient를 구한뒤 기울기가 낮은쪽으로 learning rate 만큼 이동하는걸 반복하여 최소값에 도달한다 .
  - full- batch : 한번에 갱신
 > - 정확한 방향으로 수렴 
 > - 하지만 느리다.
