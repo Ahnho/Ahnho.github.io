@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 - 그리고 우리는 global minia를 찾고 있지만 local minia를 찾고 만족하는 경우가 많다.
 ex) 
 
-<img src= "/image/PDF_1.png" width="800px" height="150px" title="image"/>
+<img src= "/image/PDF_1.png" width="600px" height="200px" title="image"/>
 
 ![[Screenshot_2022-10-10_14-34-58.png]]
 
