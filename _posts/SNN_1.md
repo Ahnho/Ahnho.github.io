@@ -1,0 +1,98 @@
+---
+layout: post
+title: SNN_1 neurons and learning flow (based brain science)...
+tags: [SNN, DL , Color]
+color: brown
+author: Ahnho
+excerpt_separator: <!--more-->
+
+---
+
+## Structure and behavior of neurons
+
+<img src= "/_image/SNN/neuron.png" width="800px" height="150px" title="image"/>
+
+- 뇌는 신경세포인 뉴런들로 구성 및 뉴런은 다른 뉴런들과 연결되어 있다.
+- dendrite(수상돌기) : 전기화화적 신호를 받아 들임
+- soma(세포체) : 수신한 신호를 결합하여 특정 임계값에 도달하면 출력신호를 발생 시킴
+- axon(축색돌기) : 발생한 신호를 다른 신경세포로 전달
+
+<!--more-->
+
+- synapse : 뉴런들을 연결함 , 정기화화적 신호 spike가 전달됨
+- spike : 짧고 순간적으로 발생하는 pulse형태로 전달되는 신호
+> - spike가 전달시 axon의 단말에 있는 synapic vesicle(소낭)이 synaptic cleft 방향으로 이동 
+> - 이동 후 vesucle에 포함되어 있는  neurotransmitter(신경 전달 물질)을 synaptic cleft에 보낸다 
+> - 신경전달물질은 시냅스 후 뉴런의 수용체로 전달되어 spike신호를 시냅스 후 뉴런에 전달한다.
+
+- synapse의 종류 :
+> - exciatory synapse : spike 전달시 막전위 상승 
+> - inhibitory synapse : spike 전달시 막전위 감소 
+- 뉴런의 막전위는 평소 negative 전압을 뛰고 있다. 
+- 막전위가 임계값에 도달시 spike가 생성되어 axon방향으로 전달 된다 
+> : 이 때 , 감소된 막전위는 resting potential(휴지 전위)보다 더 낮게 형성되며 초분극화 후 전위 상태를 한동안 유지한다. 
+
+---
+
+### ion channel
+
+<img src= "/_image/SNN/ion.png" width="800px" height="150px" title="image"/>
+
+- ligand gated : 
+> - ligand : 수용체와 결합하는 분자 
+> - receptor(수용체)와 ligand가 결합하여 열리는 channel
+- voltafe gated : 전위차에 의해서 열리는 channel ($Na{^+}$, $Ca^{2+}$,K^{+}, Cl^{-}  등 이온 별로 존재)
+- 대표적인 신경전달 물질 :
+> - GABA,Glu.gly,Ach 등이 있다. (빠르게 작용하는 물질들)
+> - 다른 신경전달 물질들도 있지만 느리게 작용하는 물질들이다.
+> -  빠르게 적용하는 물질들은 Dale의 원리가 적용 : 하나의 뉴런은 하나의 신경전달물질을 분비한다 
+- exciatory synapse의 수용체 
+> - 대표적으로 AMPA,NMDA,kainate (Glu receptors)
+> - AMPA :  allow $Na^+$ influx
+> - NMDA: allow $Na^+$ and $Ca^{2+}$ influx
+- inhibitory synapse 수용체 
+> - ${GABA_A}$ 가 대표적
+> - 위에 대한 신경전달물진 : GABA
+
+
+## SNN learning flow
+<img src= "/_image/SNN/ma.png" width="800px" height="150px" title="image"/>
+
+- 세포 이온마다 세포의 내부와 외부는 농도차가 남  $Na^+$ 같은 경우는 외부가 내부보다 약 10배정도 농도가 큼 
+> : 외부의 어떤 존재하지않는 경우 엔트로피에 의해서 세포 내부와 외부를 맞출려는 힘이 생김 
+> : **그래서 평균적으로 나가는 이온들과 들어오는 이온들의 상쇄되어 전체적으로 이동하지 않도록 처럼 보이는 평행상태를 만들기 위해서는 전기장을 걸어줄 필요가 있다.  **
+
+<img src= "/_image/SNN/spike_graph.png" width="800px" height="150px" title="image"/>
+
+- postsynaptic neuron의 전위가 휴지 전위일 때 axon 말단에서 전달되어온 Glu 신경전달물질과 AMPA 수용체와 결합한다 
+> - 이 때 , $Na^+$ channel이 열리면서 세포안으로  $Na^+$가 올라가면서 막전위가 올라감
+> + 막 전위가 올라가는 이유 : $Na^+$가 내부로 들어가면서 세포 외부막은 음이온이 형성됨
+> +  $Na^+$가 안에 들어갈수록 외부는 더욱 음이온이 형성되고 내부는 양이온이 형성됨
+> :: 위 상태가 유지되다 언젠가 전기적인 힘과 엔트로피의 대한 확산의 평행이 되는 시점이 존재 
+> ::  $Na^+$ 같은 경우는 62mV 이고 이온마다 그 시점은 다르다.
+- 이 때, Glu의 신경전달물질은 더 큰 인온인  $Ca^{2+}$ 를 통과 시킬 수 있는 NMDA 수용체에는 붙지 않은 상태
+> :  $Mg^{2+}$ 이온이 막고 있는 상태 
+-  $Na^+$ 가 새내내로 충분히 많이 들어가게 되면 막전위가 올라간 탈분극상태가 되면서 $Mg^{2+}$ 가 밀쳐내지면서 NMDA channel이 열리게되면서 $Ca^{2+}$ 와 $Na^+$ 이 통과 된다.
+- 뉴런의 전류(postsynaptic current)도 증가 
+- 막전위가 활동전위(action potential)(threshold)에 도달하면 Spike 발생 
+> - axon 방향으로 spike가 전달 & dendrite 방향으로 역전파 
+> - 역전파된 spike의 해 dendrite쪽의 전위가 올라가 약한 탈분극 상태가 됨 
+> - NMDA수용체로 부터  $Mg^{2+}$ 가 분리되어 해당 채널이 열리게 된다. 
+> - $Ca^{2+}$ 가 세포내로 흘러오면서 AMPA 수용체가 dendrite쪽으로 이동하여 부착되면서 $Na^+$  이 더 많이 흘러 들어오게 된다 
+> - 이러한 시냅스의 대한 모델의 침묵을 silent synapse model 이라고한다. 
+- silent synapse model
+> - AMPA수용체가 없는 시냅스에서도 spike신호가 잘 전달될 수 있게 하는 메커니즘을 설명하는 모델 
+> - 이와같은 수용체 증가는 spike신호를 더 강하게함(즉, 가중치를 증가시키는 역할을 함.)
+> -  시냅스에 추가된 AMPA 수용체는 세포 내의 전위 상태에 따라 다시 떨어져 나와 세포내로 이동
+> -  위와 같은 메커니즘은 synapse의 연결강도(가중치의 강도)를 변화 시키는 역할을 함
+
+
+---
+
+#### 다음 포스터에서는 이번 포스트의 내용에 이어서 synaps 연결강도 변화에 대해서 자세히 알아보겠습니다. 
+
+## Reference
+- 스파이킹 뉴런 모델의 동작과 스파이킹 신경망의 학습 (출북대-이건명)
+- https://jinprelude.github.io/posts/SNN-Basic-Tutorial-1-Spiking-Neural-Network%EB%9E%80/
+- https://www.youtube.com/watch?v=2X54S_760x0&t=873s 
+- https://dacon.io/en/codeshare/5544
